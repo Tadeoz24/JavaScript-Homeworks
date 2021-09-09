@@ -1,4 +1,4 @@
-var divisors = [];
+var myArray = [];
 
 function getDivisors(number) {
   if (typeof number !== "number") {
@@ -10,15 +10,17 @@ function getDivisors(number) {
   } else {
     for (var divisor = 1; divisor <= number; divisor++) {
       if (Number.isInteger(number / divisor)) {
-        divisors.push(divisor);
+        myArray.push(divisor);
       }
     }
-    console.log(divisors);
+    console.log(myArray);
   }
 }
 
 try {
   getDivisors(12);
+  //getDivisors('Content');
+  //getDivisors(0);
 } catch (e) {
   console.log(e);
 }

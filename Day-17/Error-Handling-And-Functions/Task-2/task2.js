@@ -17,7 +17,7 @@ function f(myArray) {
 }
 
 try {
-  f([1,2,3]);
+  f([1, 2, 3]);
   //f(1,2,3);
   //f('content');
   //f([]);
