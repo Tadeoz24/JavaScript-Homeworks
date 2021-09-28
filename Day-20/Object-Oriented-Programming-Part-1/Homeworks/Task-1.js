@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 function CoffeeMachine(power, capacity) {
   var waterAmount = 0;
   var WATER_HEAT_CAPACITY = 4200;
@@ -9,7 +9,7 @@ function CoffeeMachine(power, capacity) {
 
   this.setWaterAmount = function (amount) {
     if (amount < 0) {
-      throw new Error("Value has to be positive");
+      throw new Error('Value has to be positive');
     }
     if (amount > capacity) {
       throw new Error("You can't put more water, than " + capacity);
@@ -25,7 +25,7 @@ function CoffeeMachine(power, capacity) {
   };
 
   function onReady() {
-    console.log("Coffee is ready");
+    console.log('Coffee is ready');
   }
 
   this.run = function () {
@@ -40,7 +40,7 @@ coffeeMachine.setWaterAmount(150);
 coffeeMachine.setOnReady(function () {
   var amount = coffeeMachine.getWaterAmount();
 
-  console.log("Coffee is ready: " + amount + " ml"); // Coffee is ready: 150 ml
+  console.log('Coffee is ready: ' + amount + ' ml'); // Coffee is ready: 150 ml
 });
 
 coffeeMachine.run();

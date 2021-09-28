@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 Object.prototype.mergeDeepRight = function (args) {
   for (key in args) {
     if (args[key] == mergeDeepRight) continue;
-    else if (typeof args[key] !== "object") this[key] = args[key];
+    else if (typeof args[key] !== 'object') this[key] = args[key];
     else {
       if (Array.isArray(args[key])) {
         for (i of args[key]) {
@@ -17,23 +17,23 @@ Object.prototype.mergeDeepRight = function (args) {
 };
 
 const data = {
-  name: "fred",
+  name: 'fred',
   age: 10,
   contact: {
-    email: "moo@example.com",
+    email: 'moo@example.com',
     meta: {
       verified: true,
-      tags: ["important"],
+      tags: ['important'],
     },
   },
 };
 data.mergeDeepRight({
   age: 40,
   contact: {
-    email: "baa@example.com",
+    email: 'baa@example.com',
     favorite: true,
     meta: {
-      tags: ["vip"],
+      tags: ['vip'],
     },
   },
 });
