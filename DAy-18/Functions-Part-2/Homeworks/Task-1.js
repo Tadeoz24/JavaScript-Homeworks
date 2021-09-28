@@ -25,13 +25,13 @@ const mx = mix(
   () => {
     return 0;
   },
-  (prev) => {
+  prev => {
     return prev + 1;
   },
-  (prev) => {
-    throw new RangeError("Range is wrong");
+  prev => {
+    throw new RangeError('Range is wrong');
   },
-  (prev) => {
+  prev => {
     return prev * 3;
   }
 );

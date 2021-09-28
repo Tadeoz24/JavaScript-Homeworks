@@ -2,7 +2,7 @@ var myArray = [1, 2, 3];
 
 function f(myArray) {
   if (!Array.isArray(myArray)) {
-    throw new Error("parameter type should be an array");
+    throw new Error('parameter type should be an array');
   } else if (myArray.length === 0) {
     throw new Error("parameter can't be an empty");
   } else {

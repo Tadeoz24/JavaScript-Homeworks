@@ -11,4 +11,4 @@ while (n > 50) {
   n -= result;
   num += 1;
 }
-console.log("sum of the while loop itteration = " + num);
+console.log('sum of the while loop itteration = ' + num);

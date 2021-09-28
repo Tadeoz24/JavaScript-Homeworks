@@ -1,9 +1,9 @@
 function reverse(array) {
   if (!Array.isArray(array[0])) {
-    throw new TypeError("first parameter should be array");
+    throw new TypeError('first parameter should be array');
   }
   if (arr.length === 0) {
-    throw new TypeError("this array is empty");
+    throw new TypeError('this array is empty');
   }
 
   let reversedNumbers = [];

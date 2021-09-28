@@ -8,10 +8,10 @@ function f(arr) {
     //   else {
     //     throw new TypeError("only array!!!")
     //   }
-    else if (typeof arr[i] === "number") {
+    else if (typeof arr[i] === 'number') {
       arraySum += arr[i];
     } else {
-      throw new TypeError("not a number or not a array");
+      throw new TypeError('not a number or not a array');
     }
   }
   return arraySum;
